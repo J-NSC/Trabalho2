@@ -1,4 +1,3 @@
-# Trabalho de LP Uiui
-Xoremos ,_,
-ToT
-C# é melhor que java 
+# Trabalho de Programação
+
+Os códigos-fonte estão em `src/`, e as classes em `bin/`.
