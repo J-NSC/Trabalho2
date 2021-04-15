@@ -18,8 +18,11 @@ public class ArrayCrivo {
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		ListIterator iter;
 		int max;
+		long t1, t2;
 
 		max = sc.nextInt();
+
+		t1 = System.currentTimeMillis();
 
 		for(int i = 1; i <= max; i++) list.add(i); // preenche a lista
 
@@ -39,7 +42,10 @@ public class ArrayCrivo {
 
 		sb.deleteCharAt(sb.length() - 1); // remove o último espaço em branco
 
+		t2 = System.currentTimeMillis();
+
 		System.out.println(sb.toString());
+		System.out.println(t2-t1);
 
 	}
 }

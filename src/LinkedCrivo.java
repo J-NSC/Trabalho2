@@ -1,7 +1,7 @@
 /*
  * Autor: souzags
  * 
- * Crivo de Eratóstenes
+ * Crivo de Eratóstenes implementado com LinkedList
  *
  */
 
@@ -18,8 +18,11 @@ public class LinkedCrivo {
 		LinkedList<Integer> list = new LinkedList<Integer>();
 		ListIterator iter;
 		int max;
+		long t1, t2;
 
 		max = sc.nextInt();
+
+		t1 = System.currentTimeMillis();
 
 		for(int i = 1; i <= max; i++) list.add(i); // preenche a lista
 
@@ -39,7 +42,10 @@ public class LinkedCrivo {
 
 		sb.deleteCharAt(sb.length() - 1); // remove o último espaço em branco
 
+		t2 = System.currentTimeMillis();
+
 		System.out.println(sb.toString());
+		System.out.println(t2-t1);
 
 	}
 }
