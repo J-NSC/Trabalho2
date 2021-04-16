@@ -22,7 +22,7 @@ public class MelhorDivisor {
 
 		num = entrada.nextInt();
 
-		for(int i = 1; i < num; i++) {
+		for(int i = 1; i <= num; i++) {
 			if(num % i == 0) {
 				number.add(i);
 				somas.add(digito.somaDigito(i));
