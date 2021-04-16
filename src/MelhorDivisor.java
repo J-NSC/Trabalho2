@@ -15,9 +15,11 @@ public class MelhorDivisor {
     public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
 		MelhorDivisor digito = new MelhorDivisor();
-		int num;
 		ArrayList<Integer> number = new ArrayList<Integer>();
 		ArrayList<Integer> somas = new ArrayList<Integer>();
+		int num;
+		int max;
+
 		num = entrada.nextInt();
 
 		for(int i = 1; i <= num; i++) {
@@ -27,10 +29,14 @@ public class MelhorDivisor {
 			}
 		}
 
+		max = Collections.max(somas);
+
 
 		for(int i = 0; i < number.size(); i++) {
 			System.out.println(number.get(i) + "  " + somas.get(i));
 		}
+
+		System.out.println(max);
 
     }
 }
