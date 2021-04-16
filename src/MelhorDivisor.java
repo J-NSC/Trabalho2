@@ -1,3 +1,5 @@
+import java.util.*;
+
 import java.util.Scanner;
 public class MelhorDivisor {
     
@@ -13,10 +15,24 @@ return soma;
 Scanner entrada = new Scanner(System.in);
 MelhorDivisor digito = new MelhorDivisor();
 
-int num=0;
- 
+int num=0; 
+ArrayList<Integer> number = new ArrayList<Integer>();
+ArrayList<Integer> somas = new ArrayList<Integer>();
  num = entrada.nextInt();
-System.out.println(digito.somaDigito(num));
+
+for(int i = 1; i < num; i++) {
+if(num % i == 0) {
+number.add(i);
+somas.add(digito.somaDigito(number.get(number.indexOf(i))));
+}
+}
+
+
+for(int i = 0; i < number.size(); i++) {
+
+System.out.println(somas.get(i));
+
+}
 
     }
 }
