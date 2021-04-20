@@ -48,8 +48,9 @@ public class Jarros {
 			else return "NÃO"; // ...senão, não é possível
 		}
 
+		// Mesmo caso anterior
 		else if (a > b && a % b == 0) {
-			if (c % a == 0) return "SIM";
+			if (c % b == 0) return "SIM";
 			else return "NÃO";
 		}
 
