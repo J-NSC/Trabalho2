@@ -22,3 +22,13 @@ A classe _ArrayList_ faz o uso de um vetor de dados interno. Já a classe _Linke
 ### Comportamento
 
 ### Problemas de Performance
+
+## Crivo de Eratóstenes
+
+O Crivo de Eratóstenes é um algorítmo para encontrar números primos até um valor limite. Quando implementado com as classes _ArrayList_ e _LinkedList_, o algorítmo tem os seguintes tempos de execução:
+
+Valor Máximo | Tempo para _ArrayList_ | Tempo para _LinkedList_
+-------------|------------------------|------------------------
+10.000 | 39 ms | 42 ms
+100.000 | 502 ms | 479 ms
+1.000.000 | 67.586 ms | 158.627 ms
