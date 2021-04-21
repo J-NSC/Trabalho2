@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import javax.naming.spi.DirStateFactory.Result;
 
@@ -6,23 +7,15 @@ import javax.naming.spi.DirStateFactory.Result;
 public class Fibona {
 
 	public static void main(String[] args) {
-		ArrayList<Integer> list = new ArrayList<>(10);
-		long a=9,b=8, result= 0;
-		// for(int i = 0; i < 9; i++){
-		// 	list.add(Fibo(i, i+1));
-		// }
-
-
-		// list.add(1);
-		// list.add(11);
-	
-		// a = list.indexOf(13);
-		// b = list.get(a);
-		// System.out.println("rank do a" +a);
-		// System.out.println("valor contido no"+ b);
-
+		Scanner scan = new Scanner (System.in);
 		
-		System.out.println(fibo(3, 7, 5));
+		int a,b,n;
+		
+		a = scan.nextInt();
+		b = scan.nextInt();
+		n = scan.nextInt();
+		
+		System.out.println(fibo(a, b, n));
 		
 	}
 
