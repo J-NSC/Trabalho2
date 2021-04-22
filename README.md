@@ -39,7 +39,7 @@ Os códigos-fonte estão em `src/`, e as classes em `bin/`.
 
 * Crivo de Eratóstenes: [`ArrayCrivo.java`](src/ArrayCrivo.java)(Versão com _ArrayList_), [`LinkedCrivo.java`](src/LinkedCrivo.java)(Versão com _LinkedList_)
 * Melhor Divisor: [`MelhorDivisor.java`](src/MelhorDivisor.java)
-* Fatores Primos de Leonardo: -
+* Fatores Primos de Leonardo: [`FatoresPrimos.java`](src/FatoresPrimos.java)
 * Múltiplo Especial: [`MultiploEspecial.java`](src/MultiploEspecial.java)
 * Fibonacci: [`Fibona.java`](src/Fibona.java)
 * Duro de Matar: [`Jarros.java`](src/Jarros.java)
