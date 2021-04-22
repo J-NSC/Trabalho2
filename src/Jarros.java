@@ -1,7 +1,7 @@
 /*
- *	Autor: souzags
- *
+ *	
  *	Dados dois jarros com capacidades A e B, é possivel encher um deles com C litros?
+ *
  */
 
 import java.util.Scanner;
