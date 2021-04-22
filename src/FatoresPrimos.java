@@ -1,19 +1,75 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class FatoresPrimos {
-	public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+        
 
-		Scanner scan = new Scanner (System.in);
-		int c=0, n=0;
+        int c= 0;
+        long num;
 
-		c = scan.nextInt();
+        Scanner scan = new Scanner(System.in);
 
-		for(int i = 0; i < 2; i++ ){
-			if(c % 2 != 0){
-				n++;
-			}
-		}
+        ArrayList<Long> numeros = new ArrayList();
 
-		System.out.println(n);
-	}
+        c = scan.nextInt();
+
+        for(int i = 0; i <c ; i++){
+            num = scan.nextLong();
+            numeros.add(num);
+        }
+
+
+        for(Long i : numeros){
+            System.out.println("i " + i + " n:" +fatoPrimo(i));
+
+        }
+        // System.out.println("n:" +fatoPrimo());
+        
+    }
+
+
+    public static int fatoPrimo(long num){
+
+        long m = 1;
+        int n = 0;
+        boolean isPrimo;
+
+        int i = 2;
+
+       if(num ==1){
+        return 0;
+       }
+
+       while(true){
+
+            isPrimo = true;
+            i++;
+            
+            for(int j = 2 ; j < i ; i ++){
+
+                if(i% j == 0){
+                    isPrimo = false;
+                    break;
+                }
+
+                if(isPrimo){
+
+                    if(m * j> num){
+                        System.out.println("NFunc:" +n);
+
+                        return n;
+                    }
+
+                n++;
+                m*=i;
+                }
+            }
+
+       }
+
+    }
+
+
+   
 }
