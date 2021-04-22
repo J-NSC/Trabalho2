@@ -6,7 +6,7 @@ Essas duas classes são implementações da _interface List_, que define as estr
 
 ### Implementação
 
-A classe _ArrayList_ faz o uso de um vetor de dados interno. Já a classe _LinkedList_ ...
+A classe _ArrayList_ faz o uso de um vetor de dados interno. Já a classe _LinkedList_ implementa uma lista duplamente encadeada, na qual os dados são armazenados em nós.
 
 ### Comportamento
 
