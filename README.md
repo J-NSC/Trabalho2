@@ -14,7 +14,9 @@ Quando o _ArrayList_ chega ao limite do seu tamanho, mas ainda elementos a serem
 
 ### Problemas de Performance
 
-O custo de aumento do tamanho do array quando a capacidade total é preenchida é muito alto o linkedList possui uma perfomace maior nos metodos add é remove em comparação ao arrayList, porem os metodos get é set possuem uma performace pior que a do arrayList
+O custo inserção de elementos no _ArrayList_ é muito alto, já que isso significa deslocar elementos de suas posições. No entanto, o tempo de acesso a qualquer elemento da lista é sempre o mesmo, o que torna a manipulação dos dados mais eficiente.
+
+Já o _LinkedList_ possui uma perfomace maior na inserção e remoção de elementos quando comparado ao _ArrayList_. Isso acontece devido à organização ecadeada dos nós, o que faz com que os dados não precisem ser deslocados. Apesar disso, o acesso aos dados, que ocorre através de uma busca sequencial, leva um tempo muito maior se comparado ao caso do _ArrayList_.
 
 ## Crivo de Eratóstenes
 
