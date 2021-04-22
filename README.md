@@ -14,6 +14,8 @@ Quando o _ArrayList_ chega ao limite do seu tamanho, mas ainda elementos a serem
 
 ### Problemas de Performance
 
+O custo de aumento do tamanho do array quando a capacidade total é preenchida é muito alto o linkedList possui uma perfomace maior nos metodos add é remove em comparação ao arrayList, porem os metodos get é set possuem uma performace pior que a do arrayList
+
 ## Crivo de Eratóstenes
 
 O Crivo de Eratóstenes é um algorítmo para encontrar números primos até um valor limite. Em outras palavras, dado um número _N_, deve-se encontrar todos o números primos entre 2 e _N_. Para isso, o algorítmo é executado da forma a seguir:
