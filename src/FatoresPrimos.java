@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class FatoresPrimos {
+<<<<<<< HEAD
     public static void main(String[] args) throws Exception {
         
 
@@ -72,4 +73,9 @@ public class FatoresPrimos {
 
 
    
+=======
+	public static void main(String[] args) {
+		System.out.println("Os primos são" + primos);
+	}
+>>>>>>> f34757db5c07fa1fe895ec80c1fd8e4cde1af1ad
 }
